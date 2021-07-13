@@ -1,0 +1,179 @@
+/* --------------------
+    for common design 
+--------------------- */
+body{
+    background-color: white;
+    width: 1440px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------
+    navigation bar designe
+--------------------------- */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation{
+    margin-left: 70px;
+}
+.navigation ul{
+    display: flex;
+}
+.navigation li{
+    list-style-type: none;
+    padding: 52px 18px 0px 18px;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 125px;
+    margin-top: 25px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+.log-img img{
+    height: 20px;
+    width: 20px;
+}
+span{
+    font-size: 16px;
+    color: white; 
+}
+
+
+
+
+/* ------------------------
+    for header part design 
+-------------------------- */
+.first-heading{
+    font-size: 64px;
+}
+.cop-ami-sec{
+    background-color: rgb(45, 37, 160);
+    width: 100%;
+}
+.heading-img-container {
+    display: flex;
+    align-items: center;
+}
+.cop-text, .cop-img{
+    width: 50%;
+}
+.cop-img img{
+    width: 80%;
+}
+.cop-text{
+    color: white;
+    text-align: left;
+    margin: 100px;
+    font-size: 40px;
+}
+.first-heading{
+    margin: 10px;
+}
+.button{
+    background-color: #E02C6D;
+    color: white;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 24px;
+}
+
+/* ------------------------
+    for players designe
+-------------------------- */
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+}
+.player{
+    /* width: 30%; */
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 100%;
+}
+.player-name{
+    font-size: 28px;
+}
+.player-desc{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* --------------------
+    for All Highlights 
+---------------------- */
+
+.match{
+    display: flex;
+    width: 90%;
+    margin-top: 165px;
+    justify-content: center;
+    align-items: center;
+}
+.match-description, .match-img{
+    width: 100%;;
+}
+.match-description{
+    border-right-width: 65px;
+    margin-right: 65px;
+}
+.match-description h1{
+    font-size: 48px;
+}
+.match-img img{
+    width: 100%;
+}
+/* .match-img img:hover{
+    width: 110%;
+} */
+
+
+/* ---------------------
+    for footer section 
+---------------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+}
+.icon img {
+    height: 25px;
+    width: 25px;
+    margin: 0px 10px;
+}
+.footer-img img{
+    width: 485px;
+    height: 100px;
+}
