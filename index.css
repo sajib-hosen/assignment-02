@@ -151,6 +151,54 @@ main{
     width: 110%;
 } */
 
+/* ----------------------
+    live match designe 
+------------------------- */
+
+.live-match{
+    display: flex;
+
+}
+.live-box {
+    position: relative;
+    width: 600px;
+    height: auto    ;
+    overflow: hidden;
+    margin: 20px;
+}
+/* .live-img img{
+    width: 600px;
+    height: 500px;
+} */
+.live-description{
+    display: none;
+} 
+.live-box:hover .live-description{
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    background-color: #3b3b3b;
+    opacity: 0.5;
+    padding: 10px;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.live-box:hover img{
+    transform: scale(1.5);
+    transition: transform 2s;
+    display: block;
+}
+
+
+
+
+
+
+
+
 
 /* ---------------------
     for footer section 
@@ -165,35 +213,27 @@ footer{
     display: flex;
     justify-content: center;
 }
-.icon img {
-    height: 25px;
-    width: 25px;
+
+.icon i {
+    height: 30px;
+    width: 30px;
     margin: 0px 10px;
+    color: #E02C6D;
 }
 .footer-img img{
     width: 485px;
     height: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* background color for button  */
+.bg-color-button:hover{
+    background-color: #6C6C6C;
+}
 
 
 /* --------------------------------
     responsive designe for Mobile
 ---------------------------------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 
 /* for body  */
 body{
@@ -266,108 +306,73 @@ body{
     font-weight: 400;
     font-size: 18px;
 }
+.live-match{
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    max-width: 400px;
+    overflow: hidden;
+}
+/* hover part  */
+.live-description{
+    display: none;
+} 
+.live-box:hover .live-description{
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    background-color: #3b3b3b;
+    opacity: 0.5;
+    padding: 10px;
+    color: aliceblue;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.live-box:hover img{
+    transform: scale(1.5);
+    transition: transform 2s;
+    display: block;
 }
 
+
+}
 
 
 /* ------------------------------------
     responsive designe for pad/tablet
 -------------------------------------- */
-@media only screen and (max-width: 1007px) {
-
-    /* for body  */
-    body{
-        width: 100%;
-        margin: 0;
-    }
-    .button{
-        padding: 10px, 24px, 10px, 24px;
-    }
-    
-    /* ------------------------
-        for header part design 
-    -------------------------- */
-    /* navigation bar  */
-    .nav-bar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .navigation li{
-        list-style-type: none;
-        padding: 32px 10px 0px 10px;
-    }
-    .navigation a{
-        font-weight: 500;
-        font-size: 12px;
-    }
-
-    /* for login part  */
-    .login{
-        margin-right: 25px;
-        margin-top: 25px;
-    }
-    .log-img img{
-        height: 20px;
-        width: 20px;
-    }
-  
-
-    .first-heading{
-        font-size: 30px;
-    }
-    .cop-ami-sec{
-        background-color: rgb(45, 37, 160);
-        max-width: 100%;
-        margin: 0px;
-    }
-    .heading-img-container{
-        display: flex;
-        align-items: center;
-    }
-    .cop-text, .cop-img{
-        width: 80%;
-    }
-    .cop-img img{
-        width: 100%;
-    }
-    .first-heading{
-        margin: 0px;
-    }
-    .cop-text{
-        color: white;
-        text-align: left;
-        margin: 10px;
-        font-size: 40px;
-    }
-    
-    
-    /* palyers sectio  */
-    
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
     .all-players{
-        grid-template-columns: repeat(2, 1fr);
-        width: 77%;
+        grid-template-columns: repeat(2,1fr);
     }
     
-    /* match section  */
-    .match{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 77%;
+    .live-description{
+        display: none;
+    } 
+    .live-box:hover .live-description{
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        background-color: #3b3b3b;
+        opacity: 0.5;
+        padding: 10px;
+        color: aliceblue;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
     }
-    .match-description h1{
-        font-size: 30px;
-    }
-    /* footer section  */
-    .footer-img img{
-        width: 300px;
-        height: auto;
+    .live-box:hover img{
+        transform: scale(1.5);
+        transition: transform 2s;
+        display: block;
     }
     
-    .copyright p{
-        font-weight: 400;
-        font-size: 18px;
-    }
-    
-    }
+
+
+
+
+
+}
