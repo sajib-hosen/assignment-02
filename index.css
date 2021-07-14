@@ -24,6 +24,8 @@ body{
     list-style-type: none;
     padding: 52px 18px 0px 18px;
 }
+/* text inside navigation bar 
+---------------------------- */
 .navigation a{
     text-decoration: none;
     color: white;
@@ -31,6 +33,8 @@ body{
     font-size: 16px;
 }
 
+/* login button and icon desing 
+----------------------------------- */
 .login{
     display: flex;
     align-items: center;
@@ -40,10 +44,7 @@ body{
     background-color: #E02C6D;
     padding: 10px 24px;
 }
-.log-img img{
-    height: 20px;
-    width: 20px;
-}
+
 span{
     font-size: 16px;
     color: white; 
@@ -62,6 +63,8 @@ span{
     background-color: rgb(45, 37, 160);
     width: 100%;
 }
+/* header section designe 
+--------------------------- */
 .heading-img-container {
     display: flex;
     align-items: center;
@@ -69,6 +72,8 @@ span{
 .cop-text, .cop-img{
     width: 50%;
 }
+/* banar image designe 
+---------------------- */
 .cop-img img{
     width: 80%;
 }
@@ -81,6 +86,9 @@ span{
 .first-heading{
     margin: 10px;
 }
+
+/* designe for all button 
+-------------------------- */
 .button{
     background-color: #E02C6D;
     color: white;
@@ -91,6 +99,15 @@ span{
     padding: 10px 24px;
 }
 
+.cop-text:hover a{
+    font-size: 30px;
+    transition: font-size 3s;
+}
+
+
+
+
+
 /* ------------------------
     for players designe
 -------------------------- */
@@ -100,11 +117,15 @@ main{
     flex-direction: column;
     align-items: center;
 }
+/* all players section designe 
+------------------------------ */
 .all-players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 1200px;
 }
+/* player box designe (common)
+----------------------------- */
 .player{
     /* width: 30%; */
     margin: 10px;
@@ -112,6 +133,8 @@ main{
     background-color: white;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
+/* player image size and name 
+----------------------------- */
 .player img{
     width: 100%;
 }
@@ -122,6 +145,11 @@ main{
     font-size: 16px;
     color: #6C6C6C;
 }
+
+
+
+
+
 
 /* --------------------
     for All Highlights 
@@ -134,6 +162,8 @@ main{
     justify-content: center;
     align-items: center;
 }
+/* box sizing 
+-------------- */
 .match-description, .match-img{
     width: 100%;;
 }
@@ -147,9 +177,13 @@ main{
 .match-img img{
     width: 100%;
 }
-/* .match-img img:hover{
-    width: 110%;
-} */
+
+
+
+
+
+
+
 
 /* ----------------------
     live match designe 
@@ -159,6 +193,8 @@ main{
     display: flex;
 
 }
+/* esch box designe 
+--------------------- */
 .live-box {
     position: relative;
     width: 600px;
@@ -166,13 +202,12 @@ main{
     overflow: hidden;
     margin: 20px;
 }
-/* .live-img img{
-    width: 600px;
-    height: 500px;
-} */
+
 .live-description{
     display: none;
 } 
+/* to make the image and text hover 
+----------------------------------- */
 .live-box:hover .live-description{
     display: block;
     position: absolute;
@@ -213,13 +248,16 @@ footer{
     display: flex;
     justify-content: center;
 }
-
+/* icon desing 
+-------------- */
 .icon i {
     height: 30px;
     width: 30px;
     margin: 0px 10px;
     color: #E02C6D;
 }
+/* footer image design 
+---------------------- */
 .footer-img img{
     width: 485px;
     height: 100px;
@@ -230,12 +268,16 @@ footer{
 }
 
 
+
+
+
 /* --------------------------------
     responsive designe for Mobile
 ---------------------------------- */
 @media only screen and (max-width: 660px) {
 
-/* for body  */
+/* for body  
+-------------*/
 body{
     width: 100%;
     margin: 0;
@@ -247,8 +289,7 @@ body{
     padding: 10px, 24px, 10px, 24px;
 }
 
-/* ------------------------
-    for header part design 
+/* for header part design 
 -------------------------- */
 .first-heading{
     font-size: 30px;
@@ -280,14 +321,16 @@ body{
 }
 
 
-/* palyers sectio  */
+/* palyers sectio 
+------------------- */
 
 .all-players{
     grid-template-columns: repeat(1, 1fr);
     width: 77%;
 }
 
-/* match section  */
+/* match section  
+-------------------*/
 .match{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -296,7 +339,8 @@ body{
 .match-description h1{
     font-size: 30px;
 }
-/* footer section  */
+/* footer section  
+-------------------*/
 .footer-img img{
     width: 300px;
     height: auto;
@@ -313,7 +357,8 @@ body{
     max-width: 400px;
     overflow: hidden;
 }
-/* hover part  */
+/* hover part 
+---------------- */
 .live-description{
     display: none;
 } 
@@ -336,14 +381,19 @@ body{
     display: block;
 }
 
-
 }
+
+
+
+
 
 
 /* ------------------------------------
     responsive designe for pad/tablet
 -------------------------------------- */
 @media only screen and (min-width: 660px) and (max-width: 1024px) {
+    /* for all palyers 
+    ------------------- */
     .all-players{
         grid-template-columns: repeat(2,1fr);
     }
@@ -351,6 +401,8 @@ body{
     .live-description{
         display: none;
     } 
+    /* hover the text on the image 
+    --------------------------------- */
     .live-box:hover .live-description{
         display: block;
         position: absolute;
