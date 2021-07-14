@@ -177,3 +177,97 @@ footer{
     width: 485px;
     height: 100px;
 }
+
+
+
+
+
+
+
+
+/* --------------------------------
+    responsive designe for Mobile
+---------------------------------- */
+@media only screen and (max-width: 600px) {
+
+/* for body  */
+body{
+    width: 100%;
+    margin: 0;
+}
+.nav-bar{
+    display: none;
+}
+.button{
+    padding: 10px, 24px, 10px, 24px;
+}
+
+/* ------------------------
+    for header part design 
+-------------------------- */
+.first-heading{
+    font-size: 30px;
+}
+.cop-ami-sec{
+    background-color: rgb(45, 37, 160);
+    max-width: 100%;
+    margin: 0px;
+}
+.heading-img-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cop-text, .cop-img{
+    width: 80%;
+}
+.cop-img img{
+    width: 100%;
+}
+.first-heading{
+    margin: 0px;
+}
+.cop-text{
+    color: white;
+    text-align: left;
+    margin: 10px;
+    font-size: 40px;
+}
+
+
+/* palyers sectio  */
+
+.all-players{
+    grid-template-columns: repeat(1, 1fr);
+    width: 77%;
+}
+
+/* match section  */
+.match{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 77%;
+}
+.match-description h1{
+    font-size: 30px;
+}
+/* footer section  */
+.footer-img img{
+    width: 300px;
+    height: auto;
+}
+
+.copyright p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+}
